@@ -3,14 +3,14 @@ require_once 'config.php';
 $all_barang_items = getAllBarang($conn);
 session_start();
 
-// Definisikan nama-nama kantin secara manual
+
 $nama_kantin_hardcode = [
     'Kantin Ceria Lezat',
     'Warung Sehat Alami',
     'Pojok Kenyang Mantap',
     'Kedai Minuman Segar Jaya'
 ];
-$item_per_kantin_display = 4; // Jumlah item per kantin untuk display
+$item_per_kantin_display = 4;
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -19,7 +19,6 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kantin Sekolah</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> -->
     </head>
 <body style="padding-top: 56px;"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
@@ -267,9 +266,9 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
     </div>
     <?php
     $item_offset_howtobuy = 0;
-    // Ensure $all_barang_items is an array before slicing
+
     if (!is_array($all_barang_items)) {
-        $all_barang_items = []; // Initialize as empty array if not already an array
+        $all_barang_items = [];
     }
     foreach ($nama_kantin_hardcode as $nama_kantin_display):
     ?>
