@@ -336,7 +336,7 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
 </section>
 <hr class="my-5"> <section id="contact" class="bg-body-tertiary py-5"> <div class="container">
         <div class="text-center">
-            <h2 class="mb-4 display-5">Hubungi Kami</h2>
+            <h2 class="mb-4 display-5">Contact Me</h2>
         </div>
         <?php if (isset($_SESSION['notification'])): ?>
             <div class="alert alert-info text-center col-md-8 col-lg-6 mx-auto">
@@ -362,7 +362,7 @@ $item_per_kantin_display = 4; // Jumlah item per kantin untuk display
     </div>
 </section>
 
-<footer class="text-center py-4 bg-light"> <p class="mb-0">&copy; <?php echo date("Y"); ?> Info Kantin Sekolah.</p>
+<footer class="text-center py-2 bg-dark"> <p class="mb-0 text-light">Created by <span class="text-warning fw-bold">Iqbal Husni Saleem</span></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
